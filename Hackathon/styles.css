@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Neonderthaw&family=Shadows+Into+Light&display=swap");
+
+body {
+  background-color: bisque;
+  text-align: center;
+  color: rgb(184, 66, 12);
+}
+header {
+  border-bottom-style: ridge;
+  border-bottom-color: rgb(240, 100, 36);
+  padding-top: 1rem;
+}
+nav {
+  border-bottom-style: ridge;
+  border-bottom-color: rgb(240, 100, 36);
+}
+nav ul {
+  font-family: Shadows Into Light;
+  list-style: none;
+  border: double;
+  border-radius: 2rem;
+}
+nav li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(238, 196, 10);
+}
+a {
+  text-decoration: none;
+  color: rgb(105, 100, 100);
+}
+strong {
+  color: red;
+  font-size: x-large;
+}
+main {
+  color: rgb(90, 87, 87);
+  border-left: 2px dashed rgb(141, 133, 129);
+  padding-left: 1rem;
+  font-family: Shadows Into Light;
+}
+img {
+  width: 250px;
+  height: auto;
+  border-radius: 50px;
+  border: 5px solid rgb(240, 100, 36);
+  margin-bottom: 25px;
+  margin-top: 25px;
+  display: inline;
+}
+footer {
+  padding-top: 1px solid rgb(240, 100, 36);
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  border-top-style: double;
+  font-size: 20px;
+}
+
+/* For desktop */
+@media (min-width: 1024px) {
+  body {
+    background-color: rgb(10, 79, 88);
+    color: transparent;
+    text-align: center;
+  }
+  header {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+  h1 {
+    font-size: 5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    font-family: monospace;
+  }
+  nav li {
+    font-size: 50px;
+    display: inline;
+    border: solid rgb(143, 121, 121);
+    border-radius: 0.5rem;
+    padding: 0.5rem 3rem;
+  }
+  main {
+    color: rgb(219, 186, 186);
+  }
+  p {
+    border: yellow solid;
+    padding: 20px;
+  }
+  footer {
+    color: white;
+  }
+}

@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  text-align: center;
+  color: white;
+  background-color: rgb(223, 183, 136);
+}
+
+/* My Grid Style */
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6 / 10px);
+  grid-template-rows: 180px 70px 150px 80px 200px 100px;
+  gap: 5px;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m m m m m m m m m m m m"
+    "c c c . . . . t t t t t"
+    ". . . . . . . l l l l l"
+    ". . . . . . . . . . . ."
+    "f f f f f f f f f f f f";
+}
+
+/* Header .. h1 .. nav */
+.header {
+  grid-area: h;
+  background-color: brown;
+  grid-column: 1 / -1;
+}
+nav {
+  list-style-type: none;
+  font-size: 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: sienna;
+  width: fit-content;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: rgb(233, 83, 14);
+}
+.active {
+  background-color: #04aa6d;
+}
+
+/* Menu */
+.menu {
+  grid-area: m;
+  font-family: "Times New Roman", Times, serif;
+  border-width: medium 10px thick 15px;
+  grid-column: 1 / -1;
+}
+
+/* Content */
+.content {
+  grid-area: c;
+  background-color: darkkhaki;
+  color: rgb(255, 250, 185);
+  padding: 20px;
+  padding-top: 3px;
+  grid-column: span 6;
+  margin-left: 10px;
+}
+
+/* Topic */
+.topic {
+  grid-area: t;
+  background-color: darkslategrey;
+  color: rgb(99, 212, 212);
+  padding: 20px;
+  padding-top: 5px;
+  grid-column: span 6;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+/* Visual */
+.link {
+  grid-area: l;
+  grid-column: span 12;
+  padding: 40px;
+}
+video {
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent;
+  box-shadow: 3px 3px 3px rgb(64, 71, 64);
+  margin: 0 auto;
+  width: 80%;
+  display: block;
+}
+
+/* Footer */
+.footer {
+  grid-area: f;
+  background-color: brown;
+  margin-top: 20px;
+}
+
+/* For Desktop */
+@media (min-width: 1024px) {
+  body {
+    background-color: brown;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6 / 10px);
+    grid-template-rows: 200px 100px 150px 80px 150px;
+  }
+  .header {
+    background-color: rgb(223, 183, 136);
+  }
+  .content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .topic {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .link {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .footer {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color: rgb(223, 183, 136);
+    padding-bottom: 15px;
+  }
+}
