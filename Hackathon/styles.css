@@ -39,6 +39,23 @@ main {
   padding-left: 1rem;
   font-family: Shadows Into Light;
 }
+/* Exercise : My Solusion */
+.blogpost {
+  width: 300px;
+  border: 1px dotted brown;
+  text-align: center;
+  flex-direction: column;
+  flex-grow: 1;
+  align-self: center;
+  border-radius: 50px;
+}
+
+/* Part 2 */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 img {
   width: 250px;
   height: auto;
@@ -94,3 +111,4 @@ footer {
     color: white;
   }
 }
+
